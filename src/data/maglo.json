@@ -1,0 +1,286 @@
+{
+  "dashboard": {
+    "balanceCards": [
+      {
+        "id": 1,
+        "title": "Total Balance",
+        "amount": 5240.21,
+        "currency": "USD",
+        "icon": "wallet"
+      },
+      {
+        "id": 2,
+        "title": "Total Expenses",
+        "amount": 250.8,
+        "currency": "USD",
+        "icon": "expense"
+      },
+      {
+        "id": 3,
+        "title": "Total Saved",
+        "amount": 550.25,
+        "currency": "USD",
+        "icon": "save"
+      }
+    ],
+    "wallet": {
+      "cardNumber": "5495 2348 ****",
+      "fullNumber": "5495234823592321",
+      "holderName": "Maglo.",
+      "bankName": "Commercial Bank",
+      "expiryDate": "08/25",
+      "cvv": "***",
+      "cardType": "VISA",
+      "isDefault": true
+    },
+    "workingCapital": {
+      "title": "Working Capital",
+      "period": "April",
+      "data": [
+        {
+          "date": "Apr 14",
+          "income": 3500,
+          "expenses": 2100
+        },
+        {
+          "date": "Apr 15",
+          "income": 3200,
+          "expenses": 2300
+        },
+        {
+          "date": "Apr 16",
+          "income": 3100,
+          "expenses": 2000
+        },
+        {
+          "date": "Apr 17",
+          "income": 3400,
+          "expenses": 2200
+        },
+        {
+          "date": "Apr 18",
+          "income": 3300,
+          "expenses": 2500
+        },
+        {
+          "date": "Apr 19",
+          "income": 3600,
+          "expenses": 2100
+        },
+        {
+          "date": "Apr 20",
+          "income": 3200,
+          "expenses": 2400
+        }
+      ]
+    },
+    "recentTransactions": [
+      {
+        "id": 1,
+        "name": "iPhone 15 Pro MAX",
+        "company": "Apple Inc.",
+        "type": "Mobile",
+        "amount": 420.84,
+        "date": "14 Apr 2022",
+        "time": "08:15 AM",
+        "status": "completed"
+      },
+      {
+        "id": 2,
+        "name": "Netflix Subscription",
+        "company": "Netflix",
+        "type": "Entertainment",
+        "amount": 100.0,
+        "date": "05 Apr 2022",
+        "time": "10:30 AM",
+        "status": "completed"
+      },
+      {
+        "id": 3,
+        "name": "Figma Subscription",
+        "company": "Figma Inc.",
+        "type": "Software",
+        "amount": 244.2,
+        "date": "02 Apr 2022",
+        "time": "03:45 PM",
+        "status": "completed"
+      }
+    ],
+    "scheduledTransfers": [
+      {
+        "id": 1,
+        "recipientName": "Salih Ahmadi",
+        "recipientImage": "salih_ahmadi",
+        "amount": 415.0,
+        "date": "Apr 19, 2022 at 11:00",
+        "status": "pending"
+      },
+      {
+        "id": 2,
+        "recipientName": "Delwar Hassan",
+        "recipientImage": "delwar_hassan",
+        "amount": 212.0,
+        "date": "Apr 20, 2022 at 2:30 PM",
+        "status": "pending"
+      },
+      {
+        "id": 3,
+        "recipientName": "Mohid Hasan Nobium",
+        "recipientImage": "mohid_hasan",
+        "amount": 826.0,
+        "date": "Apr 23, 2022 at 9:15 AM",
+        "status": "pending"
+      },
+      {
+        "id": 4,
+        "recipientName": "Dr Jaber Ahmed",
+        "recipientImage": "jaber_ahmed",
+        "amount": 435.0,
+        "date": "Apr 25, 2022 at 4:20 PM",
+        "status": "pending"
+      },
+      {
+        "id": 5,
+        "recipientName": "Aff Jakir Alp",
+        "recipientImage": "jakir_alp",
+        "amount": 228.0,
+        "date": "Apr 26, 2022 at 10:00 AM",
+        "status": "pending"
+      }
+    ]
+  },
+  "transactions": [
+    {
+      "id": 1,
+      "name": "Apple Inc.DO-Unlock",
+      "type": "Mobile",
+      "amount": 420.84,
+      "date": "14 Apr 2022",
+      "time": "8:00 PM",
+      "invoiceId": "MOIL0124877",
+      "status": "completed",
+      "category": "technology"
+    },
+    {
+      "id": 2,
+      "name": "Netflix Subscription",
+      "company": "Netflix",
+      "type": "Entertainment",
+      "amount": 100.0,
+      "date": "05 Apr 2022",
+      "time": "7:00 AM",
+      "invoiceId": "MOIL0124585",
+      "status": "completed",
+      "category": "entertainment"
+    },
+    {
+      "id": 3,
+      "name": "Figma Subscription",
+      "company": "Figma Inc.",
+      "type": "Software",
+      "amount": 244.2,
+      "date": "02 Apr 2022",
+      "time": "5:30 PM",
+      "invoiceId": "MOIL0124124",
+      "status": "completed",
+      "category": "software"
+    },
+    {
+      "id": 4,
+      "name": "Bitcoin Transaction",
+      "company": "Coinbase",
+      "type": "Technology",
+      "amount": -520.84,
+      "date": "07 Apr 2022",
+      "time": "6:00 AM",
+      "invoiceId": "MOIL0135544",
+      "status": "completed",
+      "category": "cryptocurrency",
+      "isWithdrawal": true
+    },
+    {
+      "id": 5,
+      "name": "Withdraw",
+      "company": null,
+      "type": "Withdraw",
+      "amount": 1500.1,
+      "date": "30 Mar 2022",
+      "time": "8:00 AM",
+      "invoiceId": "MOIL0122143",
+      "status": "completed",
+      "category": "withdrawal",
+      "isWithdrawal": true
+    },
+    {
+      "id": 6,
+      "name": "Instagram Ads",
+      "company": "Meta Platforms",
+      "type": "Entertainment",
+      "amount": 100.0,
+      "date": "20 Mar 2022",
+      "time": "9:00 AM",
+      "invoiceId": "MOIL0124877",
+      "status": "completed",
+      "category": "advertising"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Technology",
+      "icon": "laptop",
+      "color": "#3B82F6"
+    },
+    {
+      "id": 2,
+      "name": "Entertainment",
+      "icon": "film",
+      "color": "#EF4444"
+    },
+    {
+      "id": 3,
+      "name": "Software",
+      "icon": "code",
+      "color": "#8B5CF6"
+    },
+    {
+      "id": 4,
+      "name": "Cryptocurrency",
+      "icon": "coin",
+      "color": "#F59E0B"
+    },
+    {
+      "id": 5,
+      "name": "Withdrawal",
+      "icon": "arrow-up",
+      "color": "#10B981"
+    },
+    {
+      "id": 6,
+      "name": "Advertising",
+      "icon": "megaphone",
+      "color": "#EC4899"
+    }
+  ],
+  "chartData": {
+    "workingCapital": {
+      "labels": ["Apr 14", "Apr 15", "Apr 16", "Apr 17", "Apr 18", "Apr 19", "Apr 20"],
+      "datasets": [
+        {
+          "label": "Income",
+          "data": [3500, 3200, 3100, 3400, 3300, 3600, 3200],
+          "borderColor": "#3B82F6",
+          "backgroundColor": "rgba(59, 130, 246, 0.1)",
+          "tension": 0.4
+        },
+        {
+          "label": "Expenses",
+          "data": [2100, 2300, 2000, 2200, 2500, 2100, 2400],
+          "borderColor": "#EF4444",
+          "backgroundColor": "rgba(239, 68, 68, 0.1)",
+          "tension": 0.4
+        }
+      ]
+    }
+  }
+}
