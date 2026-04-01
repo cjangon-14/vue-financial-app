@@ -8,7 +8,12 @@ const fetchDashboardData = async () => {
   try {
     const response = await fetch('http://localhost:3005/dashboard')
     dashboardData.value = await response.json()
+    console.log('fetchDashboardData:', dashboardData.value)
   } finally {
     loading.value = false
   }
+}
+
+export default function useDashboard() {
+  return { loading, dashboardData, fetchDashboardData }
 }

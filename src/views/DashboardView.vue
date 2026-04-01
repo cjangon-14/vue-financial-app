@@ -1,9 +1,11 @@
 <script setup>
 import DynamicIcons from '@/components/DynamicIcons.vue'
-import { useDashboard } from '@/composables/useDashboard'
-import { onMounted } from 'vue'
+import useDashboard from '@/composables/useDashboard'
 
-const { dashboardData, loading, fetchDashboardData } = useDashboard()
+import { onMounted, ref } from 'vue'
+
+const { dashboardData, fetchDashboardData } = useDashboard()
+const hoveredCardId = ref(null)
 
 onMounted(() => {
   fetchDashboardData()
@@ -11,12 +13,36 @@ onMounted(() => {
 </script>
 <template>
   <div class="w-full h-full p-8">
-    <div class="w-80 h-20">
-      <div>
-        <DynamicIcons name="wallet-primary" class="text-tertiary-background" />
-        <div>
-          <h1 class="font-kumbhsans font-semibold text-2xl">Total balance</h1>
-          <p class="text-sm text-gray-500"></p>
+    <div class="flex">
+      <div
+        v-for="card in dashboardData.balanceCards"
+        :key="card.id"
+        @mouseenter="hoveredCardId = card.id"
+        @mouseleave="hoveredCardId = null"
+        class="grid grid-cols-[auto_1fr] items-center mx-10 gap-4 w-60 pl-6 pr-10 py-8 rounded-lg bg-[#F8F8F8] hover:bg-[#363A3F] transition-all duration-300"
+      >
+        <div
+          class="p-3 rounded-full transition-colors duration-300"
+          :class="hoveredCardId === card.id ? 'bg-[#4E5257]' : 'bg-[#EBE8E8]'"
+        >
+          <DynamicIcons
+            :name="card.meta?.icon || ''"
+            :class="
+              hoveredCardId === card.id ? 'text-primary-background' : 'text-tertiary-background'
+            "
+            class="transition-colors duration-300"
+          />
+        </div>
+        <div class="flex flex-col items-center">
+          <h1 class="text-[#929EAE] font-kumbhsans transition-colors duration-300">
+            {{ card.title }}
+          </h1>
+          <p
+            :class="hoveredCardId === card.id ? 'text-white' : 'text-[#1B212D]'"
+            class="font-kumbhsans text-2xl font-bold transition-colors duration-300"
+          >
+            ${{ card.amount }}
+          </p>
         </div>
       </div>
     </div>

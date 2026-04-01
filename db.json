@@ -5,22 +5,22 @@
         "id": 1,
         "title": "Total Balance",
         "amount": 5240.21,
-        "currency": "USD",
-        "icon": "wallet"
+        "icon": "wallet",
+        "meta": { "icon": "wallet-primary" }
       },
       {
         "id": 2,
         "title": "Total Expenses",
         "amount": 250.8,
-        "currency": "USD",
-        "icon": "expense"
+        "icon": "expense",
+        "meta": { "icon": "wallet-primary" }
       },
       {
         "id": 3,
         "title": "Total Saved",
         "amount": 550.25,
-        "currency": "USD",
-        "icon": "save"
+        "icon": "save",
+        "meta": { "icon": "wallet_2-primary" }
       }
     ],
     "wallet": {
