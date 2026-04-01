@@ -9,15 +9,14 @@ const props = defineProps({
   },
 })
 
-// Dynamically import the SVG component using defineAsyncComponent and a computed property
+// Dynamically import the SVG component
 const iconComponent = computed(() => {
   if (!props.name) return null
-  // Use a template literal for dynamic imports with a known base directory
-  return defineAsyncComponent(() => import(`/src/assets/icons/${props.name}.svg?component`))
+  return defineAsyncComponent(() => import(`@/assets/icons/${props.name}.svg`))
 })
 </script>
 
 <template>
-  <component :is="iconComponent" v-if="iconComponent" class="fill-current" />
+  <component :is="iconComponent" v-if="iconComponent" v-bind="$attrs" />
   <span v-else>Icon not found: {{ name }}</span>
 </template>
