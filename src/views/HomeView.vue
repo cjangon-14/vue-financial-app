@@ -43,7 +43,7 @@ const src = computed(() => {
         </div>
       </header>
       <!-- Main Content -->
-      <main class="flex-1 relative z-10">
+      <main class="ml-64 pt-16">
         <router-view />
       </main>
     </div>
