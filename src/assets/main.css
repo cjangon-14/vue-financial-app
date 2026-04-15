@@ -10,6 +10,10 @@
   --font-kumbhsans: 'Kumbh Sans', sans-serif;
 }
 
+* {
+  font-family: var(--font-kumbhsans);
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {

@@ -74,38 +74,6 @@
         }
       ]
     },
-    "recentTransactions": [
-      {
-        "id": 1,
-        "name": "iPhone 15 Pro MAX",
-        "company": "Apple Inc.",
-        "type": "Mobile",
-        "amount": 420.84,
-        "date": "14 Apr 2022",
-        "time": "08:15 AM",
-        "status": "completed"
-      },
-      {
-        "id": 2,
-        "name": "Netflix Subscription",
-        "company": "Netflix",
-        "type": "Entertainment",
-        "amount": 100.0,
-        "date": "05 Apr 2022",
-        "time": "10:30 AM",
-        "status": "completed"
-      },
-      {
-        "id": 3,
-        "name": "Figma Subscription",
-        "company": "Figma Inc.",
-        "type": "Software",
-        "amount": 244.2,
-        "date": "02 Apr 2022",
-        "time": "03:45 PM",
-        "status": "completed"
-      }
-    ],
     "scheduledTransfers": [
       {
         "id": 1,
@@ -152,7 +120,7 @@
   "transactions": [
     {
       "id": 1,
-      "name": "Apple Inc.DO-Unlock",
+      "name": "iPhone 15 Pro MAX",
       "type": "Mobile",
       "amount": 420.84,
       "date": "14 Apr 2022",
@@ -200,8 +168,8 @@
     },
     {
       "id": 5,
-      "name": "Withdraw",
-      "company": null,
+      "name": "John Doe",
+      "company": "Company XYZ",
       "type": "Withdraw",
       "amount": 1500.1,
       "date": "30 Mar 2022",
@@ -282,5 +250,95 @@
         }
       ]
     }
-  }
+  },
+  "invoices": [
+    {
+      "id": 1,
+      "name": "Gadget Gallery LTD",
+      "invoiceId": "MGI.524874",
+      "date": "14 Apr 2022",
+      "time": "8:00 PM",
+      "orders": "20",
+      "type": "Retail",
+      "amount": 5420.84,
+      "status": "pending"
+    },
+    {
+      "id": 2,
+      "name": "Figma Subscription",
+      "invoiceId": "MGI.524250",
+      "date": "12 Apr 2022",
+      "time": "8:00 PM",
+      "orders": "01",
+      "type": "Software",
+      "amount": 244.8,
+      "status": "paid"
+    },
+    {
+      "id": 3,
+      "name": "Jack Dawson Eric",
+      "invoiceId": "MGI.524874",
+      "date": "12 Apr 2022",
+      "time": "9:00 AM",
+      "orders": "02",
+      "type": "Services",
+      "amount": 200.0,
+      "status": "unpaid"
+    },
+    {
+      "id": 4,
+      "name": "UIHUT Subscription",
+      "invoiceId": "MGI.524140",
+      "date": "24 Mar 2022",
+      "time": "8:00 PM",
+      "orders": "01",
+      "type": "Software",
+      "amount": 84.0,
+      "status": "paid"
+    },
+    {
+      "id": 5,
+      "name": "Citi Bank Ltd.",
+      "invoiceId": "MGI.524245",
+      "date": "10 Mar 2022",
+      "time": "8:00 PM",
+      "orders": null,
+      "type": "Withdrawal",
+      "amount": 5420.84,
+      "status": "pending"
+    },
+    {
+      "id": 6,
+      "name": "Bitcoin Transaction",
+      "invoiceId": "MGI.524254",
+      "date": "08 Mar 2022",
+      "time": "8:00 PM",
+      "orders": null,
+      "type": "Technology",
+      "amount": 400.11,
+      "status": "pending"
+    },
+    {
+      "id": 7,
+      "name": "Netflix Subscription",
+      "invoiceId": "MGI.524487",
+      "date": "02 Mar 2022",
+      "time": "7:00 PM",
+      "orders": "01",
+      "type": "Entertainment",
+      "amount": 5420.84,
+      "status": "paid"
+    },
+    {
+      "id": 8,
+      "name": "Sajib Rahman",
+      "invoiceId": "MGI.524598",
+      "date": "01 Mar 2022",
+      "time": "8:00 PM",
+      "orders": null,
+      "type": "Withdrawal",
+      "amount": 500.1,
+      "status": "paid"
+    }
+  ]
 }

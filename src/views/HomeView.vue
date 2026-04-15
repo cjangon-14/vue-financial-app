@@ -25,11 +25,11 @@ const src = computed(() => {
     <dashboard-nav-links />
 
     <div class="grid grid-rows-[10%_1fr] flex-1">
-      <header class="grid grid-cols-[1fr_350px] p-4 items-center border-b mx-6 border-gray-200">
-        <div class="bg-red-200">
+      <header class="grid grid-cols-[1fr_350px] p-4 items-center mx-6">
+        <div>
           <h1 class="font-kumbhsans font-semibold text-2xl">{{ route.name }}</h1>
         </div>
-        <div class="bg-blue-200 grid grid-cols-[50px_50px_1fr] items-center gap-4">
+        <div class="grid grid-cols-[50px_50px_1fr] items-center gap-4">
           <dynamic-icons name="search" class="shrink-0" />
           <dynamic-icons name="notification" class="shrink-0" />
           <!-- User -->
@@ -43,7 +43,7 @@ const src = computed(() => {
         </div>
       </header>
       <!-- Main Content -->
-      <main class="ml-64 pt-16">
+      <main class="min-h-screen">
         <router-view />
       </main>
     </div>
